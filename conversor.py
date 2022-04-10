@@ -1,5 +1,10 @@
+def conversor (valor_dolar):
+    cantidad_moneda = float(input("ingrese cantidad de pesos: "))
+    dolares = str(round(cantidad_moneda / valor_dolar, 2))
+    print ("tienes $" + dolares + " dolares ")
+
 tipo_moneda = int(input("""
-Bienvenido al conversor de monedas multipais
+Bienvenido al conversor de monedas multipais 
 
 1-Pesos Argentinos
 2-Pesos Chilenos
@@ -11,21 +16,18 @@ Elige una opción:
 
 
 if tipo_moneda == 1:
-    cantidad_moneda = float(input("ingrese cantidad de pesos: "))
-    valor_dolar = 196
+    
+    conversor (196)
     
 elif tipo_moneda == 2:
-    cantidad_moneda = float(input("ingrese cantidad de pesos: "))
-    valor_dolar = 815
+    conversor (815) 
 
 elif tipo_moneda == 3:
-    cantidad_moneda = float(input("ingrese cantidad de pesos: "))
-    valor_dolar = 42
+    conversor (42)
     
 else:
     print("Escribiste una opción incorrecta")
     exit()
 
 
-dolares = str(round(cantidad_moneda / valor_dolar, 2))
-print ("tienes $" + dolares + " dolares ")
+
