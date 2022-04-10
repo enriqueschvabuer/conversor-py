@@ -1,7 +1,4 @@
-pesos = input("ingrese cantidad de pesos: ")
-pesos = float(pesos)
+pesos = float(input("ingrese cantidad de pesos: "))
 valor_dolar = 196.5
-dolares = pesos / valor_dolar
-dolares = round(dolares, 2)
-dolares = str(dolares)
+dolares = str(round(pesos / valor_dolar, 2))
 print ("tienes $" + dolares + " dolares ")
