@@ -23,7 +23,8 @@ elif tipo_moneda == 3:
     valor_dolar = 42
     
 else:
-    print("Escribe una opción correcta: ")
+    print("Escribiste una opción incorrecta")
+    exit()
 
 
 dolares = str(round(cantidad_moneda / valor_dolar, 2))
